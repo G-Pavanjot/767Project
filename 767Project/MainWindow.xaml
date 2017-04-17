@@ -1,0 +1,48 @@
+﻿<Window x:Name="MainProg" x:Class="_767Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_767Project"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="SecureStream" Height="900.833" Width="855.5"
+        Closing="MainProg_Closing">
+    <Grid>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="718,744,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="-1.027,-2.171" Height="28" Click="btnStart_Click"/>
+        <Button x:Name="btnPlus" Content="+" Padding="0,-1,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Margin="-23,724,0,0" RenderTransformOrigin="1,1" VerticalAlignment="Top" Width="46" Height="32" Click="btnPlus_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform X="-16" Y="-17"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lblContent" Content="Select the Programs to Hide" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="lstProgs" HorizontalAlignment="Left" Height="647" Margin="8,74,0,0" VerticalAlignment="Top" Width="816" SelectionMode="Single" CanUserReorderColumns="False" IsReadOnly="True" SelectionChanged="ProgSelected">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Width="25" IsReadOnly="False" Binding="{Binding SelectProg, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Program Name" Width="780" Binding="{Binding ProgName}" SortDirection="Ascending"/>
+                <DataGridTextColumn Header="Process ID" Visibility="Hidden" Binding="{Binding procID}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnRefresh" Content="↻" Padding="0,-1,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Margin="44,724,0,0" RenderTransformOrigin="1,1" VerticalAlignment="Top" Width="47" Height="32" Click="btnRefresh_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform X="-16" Y="-17"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Menu x:Name="mnuFile" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="850" Margin="-1,0,0,0">
+            <MenuItem x:Name="mnuFile1" Header="File" FontSize="12">
+                <MenuItem x:Name="mnuSettings" Header="Settings" Click="mnuSettings_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="MnuExit" Header="Exit" FontSize="12" Click="MnuExit_Click"/>
+        </Menu>
+    </Grid>
+</Window>

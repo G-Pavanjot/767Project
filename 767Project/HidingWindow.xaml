@@ -1,0 +1,24 @@
+﻿<Window x:Class="_767Project.HidingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_767Project"
+        mc:Ignorable="d"
+        Title="HidingWindow" Height="300" Width="300"
+        WindowState="Maximized"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Stretch" Height="271" VerticalAlignment="Stretch" Width="294" Grid.ColumnSpan="2">
+            <Label x:Name="lblHelp" Content="Oops! This is one of the programs needing to be hidden!" HorizontalAlignment="Center" Margin="0,137,-231,99" VerticalAlignment="Center" Height="35" Width="525" FontSize="18"/>
+            <Button x:Name="btnContinue" Content="Continue" HorizontalAlignment="Left" Margin="13,172,0,0" VerticalAlignment="Top" Width="151" Click="btnContinue_Click" Height="41"/>
+            <Button x:Name="btnBack" Content="To Main Program Screen" HorizontalAlignment="Left" Margin="197,172,-53,0" VerticalAlignment="Top" Width="150" Height="41" Click="btnBack_Click"/>
+            <Button x:Name="btnOBS" Content="To OBS" HorizontalAlignment="Left" Margin="374,172,-231,0" VerticalAlignment="Top" Width="151" Height="41" IsEnabled="False" Click="btnOBS_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
