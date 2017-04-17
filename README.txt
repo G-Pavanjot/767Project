@@ -8,7 +8,7 @@ Open the .SLN (Visual Studio Project) in visual studio and build the project
 The executable will be located in the bin > Debug folder
 
 Method 2:
-Executable is also provided within the bin > Debug folder, where it can be run
+Executable is also provided within the 767Project > bin > Debug folder, where it can be run
 
 
 To Use Program:
