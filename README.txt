@@ -1,6 +1,10 @@
-﻿README:
+README:
 SecureStream README
 By: Pavanjot Gill
+
+IMPORTANT: SOFTWARE ONLY WORKS ON WINDOWS OS
+
+
 
 To Run Program:
 Method 1:
