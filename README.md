@@ -3,8 +3,7 @@ SecureStream software to prevent accidental windows from showing to an audience
 IMPORTANT: SOFTWARE ONLY WORKS ON WINDOWS OS
 
 README:
-SecureStream README
-By: Pavanjot Gill
+SecureStream By: Pavanjot Gill
 
 To Run Program:
 Method 1:
